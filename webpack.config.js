@@ -1,5 +1,3 @@
-const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = (env, argv) => ({
@@ -9,8 +7,7 @@ module.exports = (env, argv) => ({
     devtool: argv.mode === "production" ? false : "inline-source-map",
 
     entry: {
-        ui: "./src/ui/ui.tsx", // The entry point for your UI code
-        code: "./src/plugin/plugin.ts" // The entry point for your plugin code
+        code: "./src/plugin.ts" // The entry point for your plugin code
     },
 
     module: {
@@ -38,16 +35,5 @@ module.exports = (env, argv) => ({
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "build") // Compile into a folder called "build"
-    },
-
-    // Tells Webpack to generate "ui.html" and to inline "ui.ts" into it
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/ui/ui.html",
-            filename: "ui.html",
-            inlineSource: ".(js)$",
-            chunks: ["ui"]
-        }),
-        new HtmlWebpackInlineSourcePlugin()
-    ]
+    }
 });
