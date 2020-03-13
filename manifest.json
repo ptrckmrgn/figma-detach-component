@@ -1,0 +1,11 @@
+{
+    "name": "Create React Figma Plugin",
+    "id": "820118309664775643",
+    "api": "1.0.0",
+    "main": "build/code.js",
+    "ui": "build/ui.html",
+    "menu": [
+        { "name": "Test No UI", "command": "noUI" },
+        { "name": "Test UI", "command": "UI" }
+    ]
+}
