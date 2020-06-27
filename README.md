@@ -1,3 +1,15 @@
+# Description
+
+Detach master components, just like you detach instances with this simple plugin.
+
+Ever been annoyed by the fact that once you create a component, there’s no going back? Select a component and run this simple plugin to revert it back to a frame in the same way "Detach Instance" does with your instances.
+
+It will also do multiple components if you select more than one.
+
+### What will happen the master has instances?
+
+Any instances will remain untouched. You will also still be able to run "Master Component —> Restore Master Component" on them to restore their master component.
+
 # Setup
 
 1. Clone this repo to a folder
