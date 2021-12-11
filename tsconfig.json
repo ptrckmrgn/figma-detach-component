@@ -8,8 +8,12 @@
         "strictNullChecks": true,
         "lib": ["dom", "ESNext"],
         "module": "esnext",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/@figma"
+          ]
     },
-    "include": ["figma.d.ts", "shims.d.ts", "src/**/*"],
+    "include": ["shims.d.ts", "src/**/*"],
     "exclude": ["node_modules", "**/*.spec.ts"]
 }
