@@ -1,5 +1,5 @@
 {
-    "name": "Detach Master",
+    "name": "Detach Component",
     "id": "820118309664775643",
     "api": "1.0.0",
     "main": "build/code.js",
